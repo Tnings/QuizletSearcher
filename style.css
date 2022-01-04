@@ -29,11 +29,10 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     background: #303854;
-    transform: translate(-4px);
 }
 
 #search_input{
-    width: calc(99% - 50px);
+    width: calc(100% - 50px);
     height: 90%;
     font-size: 250%;
     background: #303854;
@@ -123,14 +122,20 @@ body {
 #output_container{
     width: 70%;
     height: 820px;
-    margin: 0 auto;
+    margin-left: calc(50% - 35%);
+
     overflow: scroll;
 }
 
-#terms_settings{
-    width: 70%;
-    font-size: 20px;
+#terms{
+    width: calc(100% - 35px);
+    font-size: 200%;
     margin: 0 auto 5px;
+    float: left;
+}
+#settings{
+    width: 70%;
+    margin: 0 auto;
 }
 
 .separation{
@@ -163,18 +168,37 @@ body {
     float: right;
     padding: 10px;
 }
-.card_separation{
-    height: calc(90% + 10px);
-    width: 3px;
-    background: #13141a;
-    float: left;
-
-}
 
 .highlight {
     background-color: #f7cf4d;
     color: black;
     border-radius: 1px;
+}
+
+#order{
+    background-color: #13141b;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    float: right;
+    display: none;
+}
+
+#order:hover{
+    background-color: #1b1c26;
+}
+
+#down_arrow{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(110deg) brightness(112%) contrast(101%);
+    margin-left: calc((35px / 2) - 10px);
+    margin-top: calc((35px / 2) - 10px);
+}
+
+#up_arrow{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(110deg) brightness(112%) contrast(101%);
+    margin-left: calc((35px / 2) - 10px);
+    margin-top: calc((35px / 2) - 10px);
+    display: none;
 }
 
 @font-face {
