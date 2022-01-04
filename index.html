@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Quizlet Searcher</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+        <script src="main.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="info_bar" class="bar">
+
+            <div id="file_upload">
+
+                <div id="file_upload_text">
+                    Upload Data
+                </div>
+
+                <img id="file_upload_icon" src="icons/plus_icon.svg" style="height: 26px;width: 26px">
+                <input type="file" id="file_upload_button" style="display: none">
+
+            </div>
+
+        </div>
+
+        <div id="search_bar" class="bar">
+<!--            <img id="search_icon" src="icons/search_icon.svg" width=30 height=30/>-->
+            <label for="search_input"></label><input id="search_input" placeholder="Search your Quizlet">
+        </div>
+
+        <div id="terms_settings">
+
+        </div>
+
+        <div id="output_container">
+
+            <div id="upload_file_box">
+                <img id="upload_file_box_icon" src="icons/file_upload.svg" style="height: 150px;width: 150px">
+                <br>Please Upload a File
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

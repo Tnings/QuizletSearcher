@@ -1,0 +1,184 @@
+/*
+ * Colors
+ * Bg: #0a092b
+ * Col 1: #303854
+ * Btn: #4654f6
+ * Accent: #0a092b
+ */
+
+
+body {
+    font-family: "Hurme Geometric Sans 2", sans-serif;
+    background: #0a092b;
+    color: white;
+}
+
+.bar{
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#info_bar{
+    width: 100%;
+    height: 30px !important;
+}
+
+#search_bar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #303854;
+    transform: translate(-4px);
+}
+
+#search_input{
+    width: calc(99% - 50px);
+    height: 90%;
+    font-size: 250%;
+    background: #303854;
+    border-radius: 10px;
+
+    outline: none;
+    font-family: "Hurme Geometric Sans 2", sans-serif;
+    color: black;
+    border: none;
+    /*float: right;*/
+    margin-top: 2px;
+    /*margin-right: 10px;*/
+
+    background: url(icons/search_icon.svg) no-repeat scroll 16px 10px;
+    padding-left:50px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+/*#search_icon{*/
+/*    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);*/
+/*    !*margin-left: 16px;*!*/
+/*    margin-top: 10px;*/
+/*    float: left;*/
+/*}*/
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #797f93;
+    opacity: 1; /* Firefox */
+}
+
+#file_upload{
+    width: 140px;
+    height: 30px;
+
+    background-color: #4654f6;
+    color: white;
+
+    float: right;
+    border-radius: 3px;
+}
+
+#file_upload:hover{
+    background-color: #413ed0;
+    cursor: pointer;
+}
+#file_upload:active{
+    background-color: #5967ff;
+    cursor: pointer;
+}
+
+#file_upload_icon{
+    filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(94deg) brightness(102%);
+    float: right;
+    margin: 2px;
+}
+
+#file_upload_text{
+    float: left;
+    width: 95px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+#upload_file_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 600px;
+    font-size: 20px;
+    text-align: center;
+    background: #0a092b;
+    border-radius: 15px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #303854;
+}
+
+#upload_file_box_icon{
+    margin-left: 7px;
+    margin-top: 150px;
+    filter: invert(34%) sepia(41%) saturate(867%) hue-rotate(193deg) brightness(92%) contrast(94%);
+}
+
+#output_container{
+    width: 70%;
+    height: 820px;
+    margin: 0 auto;
+    overflow: scroll;
+}
+
+#terms_settings{
+    width: 70%;
+    font-size: 20px;
+    margin: 0 auto 5px;
+}
+
+.separation{
+    width: 65%;
+    height: 3px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background: #13141a;
+}
+
+
+.card{
+    width: 100%;
+    background-color: #303854;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    overflow:hidden;
+    display: table;
+}
+
+
+.question{
+    width: 35%;
+    float: left;
+    padding: 10px;
+}
+
+.answer{
+    width: 60%;
+    float: right;
+    padding: 10px;
+}
+.card_separation{
+    height: calc(90% + 10px);
+    width: 3px;
+    background: #13141a;
+    float: left;
+
+}
+
+.highlight {
+    background-color: #f7cf4d;
+    color: black;
+    border-radius: 1px;
+}
+
+@font-face {
+    font-family: 'Hurme Geometric Sans 2';
+    src: url('Hurme_Font.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('Hurme_Font.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
